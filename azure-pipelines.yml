@@ -20,7 +20,7 @@ steps:
     npm run build
   displayName: 'npm install and build'
 
-  - task: PublishCodeCoverageResults@1
+- task: PublishCodeCoverageResults@1
   inputs:
     codeCoverageTool: "JaCoCo"
     summaryFileLocation: "$(System.DefaultWorkingDirectory)/**/site/jacoco/jacoco.xml"
